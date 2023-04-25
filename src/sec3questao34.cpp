@@ -12,9 +12,9 @@ int main(){
     cout << "tela de cadastro: " << endl;
     while(nome == senha){
         cout << "Insira seu nome: ";
-        cin >> nome;
+        getline(cin, nome);
         cout << "Insira uma sua senha: ";
-        cin >> senha;
+        getline(cin, senha);
         if(nome == senha){
             cout << endl << "ERRO! nome e senhas iguais!\n" << endl;
         }

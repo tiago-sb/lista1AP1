@@ -6,7 +6,21 @@ Faça um programa que leia 5 números e informe o maior número.
 using namespace std;
 
 int main(){
-    float a, b, c, d, e;
-    cin >> a >> b >> c >> d >> e;
+    int i = 0;
+    float num, maior;
+    cin >> num;
+    maior = num;
+
+    while (i < 4){
+        cin >> num;
+        if(maior < num){
+            maior = num;
+        }
+        i++;
+    }
+
+    system("cls");
+    cout << maior;
+
     return 0;
 }

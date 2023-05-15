@@ -11,10 +11,10 @@ using namespace std;
 
 int main(){
     setlocale(LC_ALL,"portuguese");
-    int idade, somaIdade, smJov, smAdu, smIdo, cont;
-    somaIdade = smJov = smAdu = smIdo = cont = 0;
+    int idade, somaIdade, cont;
     float media;
     char sair;
+    somaIdade = cont = 0;
     //estrutura que irá permitir descobrir a classe da turma (jovem/adulta/velha)
     do {
         cout << "Insira a idade da " << cont + 1 << "a. pessoa (entre 0 e 129): ";
